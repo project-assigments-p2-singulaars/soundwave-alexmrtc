@@ -1,4 +1,37 @@
 :host {
     background-color: #202027;
     grid-area: footer;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "left-contact right-contact";
+}
+
+#left-contact{
+    grid-area: left-contact;
+}
+
+#right-contact{
+    grid-area: right-contact;
+}
+
+.contact {
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact p {
+    font-weight: bold;
+}
+
+.social-media {
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
 }
