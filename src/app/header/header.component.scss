@@ -1,4 +1,72 @@
-:host {
-    background-color: #202027;
+header {
+    background-color: #2F303A;
     grid-area: header;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "logo-container nav-bar";
+}
+
+#logo-container {
+    grid-area: logo-container;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+}
+
+#logo-container img {
+    height: 3rem;
+    width: 3rem;
+}
+
+#logo-container h1 {
+    font-size: 1.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 10vh;
+    grid-area: nav-bar;
+}
+
+#navbar-header {
+    width: 50%;
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: .5rem;
+}
+
+li {
+    width: 25%;
+    height: 75%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li a {
+    width: 75%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+}
+
+li:hover {
+    background-color: #202027;
 }
