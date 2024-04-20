@@ -6,3 +6,50 @@
   grid-template-rows: 10vh 83vh 7vh;
   grid-template-areas: "header" "discover" "footer";
 }
+
+main {
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+  grid-template-rows: 10vh 63vh 10vh;
+  grid-template-areas: ". ." "mainContainer coversContainer" ". .";
+}
+
+#mainContainer{
+  grid-area: mainContainer;
+  display: grid;
+  grid-template-columns: 15vw 35vw;
+  grid-template-areas: ". mainTitle" ". discoverIconsContainer" ". mainText";
+}
+
+.mainContent {
+  height: 100%;
+}
+
+#mainContainer h2 {
+  grid-area: mainTitle;
+}
+
+#discoverIconsContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  grid-area: discoverIconsContainer;
+}
+
+.discoverIcon {
+  background-color: #202027;
+    height: 8rem;
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#mainContainer p {
+  grid-area: mainText;
+}
+
+#coversContainer {
+  grid-area: coversContainer;
+}
