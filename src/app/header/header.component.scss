@@ -30,7 +30,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     height: 10vh;
     grid-area: nav-bar;
 }
@@ -59,12 +59,13 @@ li {
 li a {
     width: 75%;
     height: 100%;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
 
     text-decoration: none;
+    color: white
 }
 
 li:hover {
