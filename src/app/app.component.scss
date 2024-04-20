@@ -1,9 +1,4 @@
 :host {
-    display: grid;
-    grid-template-columns: 100vw;
-    grid-template-rows: 10vh 83vh 7vh;
-    grid-template-areas: "header" "landing" "footer";
-
-    font-size: 1.2rem;
-    color: white;
+  font-size: 1.2rem;
+  color: white;
 }
