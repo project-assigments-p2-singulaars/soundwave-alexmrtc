@@ -3,15 +3,15 @@ header {
     grid-area: header;
 
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: "logo-container nav-bar";
+    grid-template-columns: 23vw 20vw 20vw 22vw 15vw;
+    grid-template-areas: ". logo-container . nav-bar .";
 }
 
 #logo-container {
     grid-area: logo-container;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 
     gap: 1rem;
@@ -36,19 +36,18 @@ nav {
 }
 
 #navbar-header {
-    width: 50%;
-    height: 100%;
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-    gap: .5rem;
+  width: 100%;
+  height: 100%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: .7rem;
 }
 
 li {
-    width: 25%;
+    width: 30%;
     height: 75%;
 
     display: flex;

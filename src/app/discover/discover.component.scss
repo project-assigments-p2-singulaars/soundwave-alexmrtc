@@ -9,16 +9,17 @@
 
 main {
   display: grid;
-  grid-template-columns: 50vw 50vw;
+  grid-template-columns: 65vw 35vw;
   grid-template-rows: 10vh 63vh 10vh;
   grid-template-areas: ". ." "mainContainer coversContainer" ". .";
 }
 
-#mainContainer{
+#mainContainer {
   grid-area: mainContainer;
   display: grid;
-  grid-template-columns: 15vw 35vw;
-  grid-template-areas: ". mainTitle" ". discoverIconsContainer" ". mainText";
+  grid-template-columns: 23vw 40vw 2vw;
+  grid-template-rows: 15vh 11vh 11vh 11vh 15vh;
+  grid-template-areas: ". . ." ". mainTitle ." ". discoverIconsContainer ." ". mainText ." ". . .";
 }
 
 .mainContent {
@@ -27,23 +28,33 @@ main {
 
 #mainContainer h2 {
   grid-area: mainTitle;
+  font-size: 3.5rem;
+  font-weight: normal;
+    margin: 0;
 }
 
 #discoverIconsContainer {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 1rem;
   grid-area: discoverIconsContainer;
 }
 
 .discoverIcon {
   background-color: #202027;
-    height: 8rem;
+  height: 6rem;
+  width: 6rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.discoverIcon img {
+  height: 2.5rem;
     width: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    margin-top: .5rem;
 }
 
 #mainContainer p {
@@ -52,4 +63,14 @@ main {
 
 #coversContainer {
   grid-area: coversContainer;
+  display: grid;
+  align-items: end;
+  grid-template-rows: 45vh 18vh;
+  grid-template-areas: "coverImg" ".";
+}
+
+#coversContainer img {
+  grid-area: coverImg;
+  height: 20rem;
+  width: 20rem;
 }
