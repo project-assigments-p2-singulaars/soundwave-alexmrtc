@@ -6,3 +6,60 @@
   grid-template-rows: 10vh 83vh 7vh;
   grid-template-areas: "header" "join" "footer";
 }
+
+main {
+  display: grid;
+
+  grid-template-columns: 23vw 27vw 35vw 15vw;
+  grid-template-areas: ". pageTitle registerForm .";
+
+  align-items: center;
+}
+
+main h2 {
+  grid-area: pageTitle;
+
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  font-size: 3rem;
+}
+
+main h2 span {
+  color: #BC3A80
+}
+
+main form {
+  grid-area: registerForm;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #211F27;
+
+  border-radius: 1rem;
+
+  gap: 1rem;
+}
+
+form input,
+label {
+  width: 75%;
+}
+
+form input {
+  height: 2rem;
+  background-color: #211F27;
+  border: .1rem solid #596da0;
+  border-radius: .5rem;
+}
+
+form input[type="submit"] {
+  height: 2rem;
+  background-color: #1762A7;
+  border: .1rem solid #1762A7;
+  border-radius: .5rem;
+  color: white
+}
+
