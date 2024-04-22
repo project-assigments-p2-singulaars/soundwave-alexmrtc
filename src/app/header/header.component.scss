@@ -17,6 +17,11 @@ header {
     gap: 1rem;
 }
 
+#logo-container a {
+    z-index: 2;
+
+}
+
 #logo-container img {
     height: 3rem;
     width: 3rem;

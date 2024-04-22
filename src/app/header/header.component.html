@@ -1,6 +1,6 @@
 <header>
   <div id="logo-container">
-    <a routerLink="">
+    <a [routerLink]="['']">
       <img src="../../assets/logo.png">
     </a>
     <h1>Soundwave</h1>
@@ -8,8 +8,8 @@
 
   <nav>
     <ul id="navbar-header">
-      <li><a routerLink="/discover-page">Discover</a></li>
-      <li><a routerLink="/join-page">Join</a></li>
+      <li><a [routerLink]="['/discover-page']">Discover</a></li>
+      <li><a [routerLink]="['/join-page']">Join</a></li>
     </ul>
   </nav>
 </header>
