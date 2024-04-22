@@ -1,6 +1,11 @@
+:host {
+    z-index: 2;
+}
+
 footer {
     background-color: #202027;
     grid-area: footer;
+    z-index: 2;
 
     display: grid;
     grid-template-columns: 50% 50%;
