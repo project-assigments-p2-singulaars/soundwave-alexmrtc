@@ -9,5 +9,5 @@ import { HeaderComponent } from '../header/header.component';
   styleUrl: './landing-page.component.scss'
 })
 export class LandingPageComponent {
-
+  
 }
