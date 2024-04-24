@@ -46,6 +46,7 @@ main {
 }
 
 #landingContentContainer h2 {
+
   font-size: 3rem;
   font-weight: normal;
   margin-bottom: 0;
@@ -133,5 +134,26 @@ main {
     width: 18rem;
     bottom: -9rem;
     right: -9rem;
+  }
+
+  #landingContentContainer {
+    display: grid;
+    grid-template-columns: 90vw;
+    grid-template-rows: 5vh 20vh 40vh 10vh 15vh;
+    grid-template-areas: "." "mainTitle" "mainText" "joinButton" ".";
+  }
+
+  #landingContentContainer h2 {
+    grid-area: mainTitle;
+
+  }
+
+
+  #landingContentContainer p {
+    grid-area: mainText;
+  }
+
+  #landingContentContainer button {
+    grid-area: joinButton;
   }
 }

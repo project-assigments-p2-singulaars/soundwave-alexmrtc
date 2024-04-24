@@ -30,7 +30,7 @@ main {
   grid-area: mainTitle;
   font-size: 3.5rem;
   font-weight: normal;
-    margin: 0;
+  margin: 0;
 }
 
 #discoverIconsContainer {
@@ -53,8 +53,8 @@ main {
 
 .discoverIcon img {
   height: 2.5rem;
-    width: 5rem;
-    margin-top: .5rem;
+  width: 5rem;
+  margin-top: .5rem;
 }
 
 #mainContainer p {
@@ -73,4 +73,25 @@ main {
   grid-area: coverImg;
   height: 20rem;
   width: 20rem;
+}
+
+@media (width <=480px) {
+  main {
+    grid-template-columns: 100vw;
+    grid-template-rows: 5vh 43vh 35vh;
+    grid-template-areas: "." "mainContainer" "coversContainer";
+  }
+
+  #mainContainer {
+    grid-template-columns: 5vw 90vw 5vw;
+    grid-template-rows: 15vh 20vh 8vh;
+    grid-template-areas: ". mainTitle ." ". discoverIconsContainer ." ". mainText .";
+  }
+
+  #coversContainer {
+    align-items: start;
+    justify-content: center;
+    grid-template-rows: 35vh;
+    grid-template-areas: "coverImg";
+  }
 }
