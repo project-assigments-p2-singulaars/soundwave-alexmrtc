@@ -12,11 +12,11 @@ footer {
     grid-template-areas: "left-contact right-contact";
 }
 
-#left-contact{
+#left-contact {
     grid-area: left-contact;
 }
 
-#right-contact{
+#right-contact {
     grid-area: right-contact;
 }
 
@@ -39,4 +39,19 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
+}
+
+@media (width <=480px) {
+    footer {
+        grid-template-columns: 10vw 40vw 40vw 10vw;
+        grid-template-areas: ". left-contact right-contact .";
+    }
+
+    .contact {
+        justify-content: space-around;
+    }
+
+    .social-media {
+        flex-direction: column;
+    }
 }

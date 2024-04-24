@@ -46,6 +46,7 @@ main {
 }
 
 #landingContentContainer h2 {
+
   font-size: 3rem;
   font-weight: normal;
   margin-bottom: 0;
@@ -91,6 +92,68 @@ main {
   height: 50rem;
   width: 50rem;
   bottom: -19rem;
-  right: -19rem; 
+  right: -19rem;
   background-color: #3457b21a;
+}
+
+@media (width <=760px) {
+  #girlContainer {
+    display: none;
+  }
+
+  main {
+    display: grid;
+    grid-area: landing;
+
+    grid-template-columns: 10vw 80vw 10vw;
+    grid-template-areas: ". mainContent .";
+  }
+
+  #landingContentContainer {
+    justify-content: center;
+    margin-left: 5rem;
+  }
+
+  .backgroundCircle {
+    height: 7rem;
+    width: 7rem;
+  }
+
+  #redCircle {
+    top: 50rem;
+    left: 4rem;
+  }
+
+  #blueCircle {
+    top: 9rem;
+    left: 9rem;
+  }
+
+  #bigBlueCircle {
+    height: 18rem;
+    width: 18rem;
+    bottom: -9rem;
+    right: -9rem;
+  }
+
+  #landingContentContainer {
+    display: grid;
+    grid-template-columns: 90vw;
+    grid-template-rows: 5vh 20vh 40vh 10vh 15vh;
+    grid-template-areas: "." "mainTitle" "mainText" "joinButton" ".";
+  }
+
+  #landingContentContainer h2 {
+    grid-area: mainTitle;
+
+  }
+
+
+  #landingContentContainer p {
+    grid-area: mainText;
+  }
+
+  #landingContentContainer button {
+    grid-area: joinButton;
+  }
 }
